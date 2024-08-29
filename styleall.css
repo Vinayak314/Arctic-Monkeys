@@ -1,0 +1,95 @@
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  padding-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+ol {
+  padding-bottom: 20px;
+  margin: 20px 25px;
+}
+
+li {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+.list-item {
+  margin: 15px 25px;
+}
+
+p {
+  font-size: 1.4rem;
+  margin-top: 15px;
+  font-weight: 500;
+}
+/*Layout*/
+
+.layout {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 60px 1fr 30px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "inner"
+    "footer";
+}
+
+header {
+  grid-area: header;
+  font-size: 1.4rem;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.inner-grid {
+  grid-area: inner;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  margin-top: 30px;
+
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.header-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 5px;
+}
+
+.fa-brands {
+  padding-right: 6px;
+}
